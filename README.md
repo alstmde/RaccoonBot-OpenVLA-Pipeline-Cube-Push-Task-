@@ -58,6 +58,10 @@ Raw MuJoCo demonstration은 다음 명령어로 생성하였다.
 cd /data/Raccoonbot_Openvla/Mujoco
 python raccoon_grasp_push_4objects_alltargets_dataset_fixed.py
 
+
+
+
+
 ## 6. Execution Pipeline
 
 본 프로젝트는 다음 순서로 진행하였다.
