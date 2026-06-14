@@ -17,6 +17,9 @@
 - RLDS / TFDS dataset 재구축
 - OpenVLA LoRA fine-tuning 수행
 - push inference 안정화를 위한 client-side action 보정 추가
+- Fine-tuned model을 local MuJoCo 환경에서 직접 inference test 수행
+- 실제 RaccoonBot hardware와 연결하여 yellow cylinder grasp demo 수행
+
 
 ## 3. Task Setup
 
@@ -49,7 +52,9 @@ Cylinder push도 실험하였으나, cylinder는 굴림 및 접촉 특성이 불
 | `Mujoco/raccoon_grasp_push_4objects_alltargets_dataset_fixed.py` | grasp/push demonstration dataset 생성 코드 |
 | `local_client/openvla_grasp_push_4objects_custom_client_focus_pushboost.py` | grasp/push inference를 위한 수정 client |
 | `logs/finetune_grasp_push_300ep_10000step_b2_ga8.log` | OpenVLA LoRA fine-tuning log |
-
+| `Mujoco/gif/grasp.gif` | fine-tuned model local grasp inference 결과 |
+| `Mujoco/gif/push.gif` | fine-tuned model local push inference 결과 |
+| `Mujoco/gif/real.gif` | 실제 RaccoonBot yellow cylinder grasp 결과 |
 
 ## 5. Before / After Evidence
 
