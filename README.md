@@ -45,10 +45,9 @@ Cylinder push도 실험하였으나, cylinder는 굴림 및 접촉 특성이 불
 
 | File | Description |
 |---|---|
-| `Mujoco/Raccoon_colored_cylinder_cube.xml` | cylinder와 cube가 포함된 MuJoCo scene |
+| `Mujoco/Raccoon_colored_cylinder_cube.xml` | cylinder와 cube가 포함되도록 수정한 MuJoCo scene |
 | `Mujoco/raccoon_grasp_push_4objects_alltargets_dataset_fixed.py` | grasp/push demonstration dataset 생성 코드 |
-| `local_client/openvla_grasp_push_4objects_custom_client_focus_pushboost.py` | OpenVLA inference client |
-| `local_client/raccoon_env.py` | OpenVLA 7D action을 RaccoonBot 4DOF motion으로 변환하는 environment 코드 |
+| `local_client/openvla_grasp_push_4objects_custom_client_focus_pushboost.py` | grasp/push inference를 위한 수정 client |
 | `logs/finetune_grasp_push_300ep_10000step_b2_ga8.log` | OpenVLA LoRA fine-tuning log |
 
 ## 5. Dataset Generation
