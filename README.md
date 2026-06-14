@@ -57,7 +57,7 @@ Raw MuJoCo demonstration은 다음 명령어로 생성하였다.
 ```bash
 cd /data/Raccoonbot_Openvla/Mujoco
 python raccoon_grasp_push_4objects_alltargets_dataset_fixed.py
-
+```
 
 
 
