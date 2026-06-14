@@ -411,13 +411,13 @@ python visualize_episode_gif.py \
 
 Instruction: `grasp the yellow cylinder`
 
-![Grasp task demo](videos/grasp.gif)
+![Grasp task demo](Mujoco/gif/grasp.gif)
 
 ### Push Task
 
 Instruction: `push the blue cube`
 
-![Push task demo](videos/push.gif)
+![Push task demo](Mujoco/gif/push.gif)
 
 실행 결과, fine-tuned model은 language instruction에 따라 grasp와 push task를 구분하여 수행하였다. Push task에서는 cube가 더 명확하게 밀리도록 client-side push boost를 적용하였다.
 
