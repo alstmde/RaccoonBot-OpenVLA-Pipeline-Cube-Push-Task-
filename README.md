@@ -399,32 +399,25 @@ python visualize_episode_gif.py \
 
 이를 통해 language instruction에 따라 RaccoonBot이 서로 다른 동작을 수행하는 것을 확인할 수 있다. Grasp task에서는 target object 쪽으로 이동한 뒤 gripper를 닫고, push task에서는 gripper를 open 상태로 유지한 채 target cube를 앞으로 미는 동작이 나타난다.
 
+
+
 ## 8. Fine-tuned Model Local Inference Demo
 
-Fine-tuning이 완료된 OpenVLA model을 서버에서 inference server로 실행한 뒤, local PC의 MuJoCo client와 SSH tunnel로 연결하여 실제 grasp/push task를 수행하였다.
+본 프로젝트에서 직접 생성한 300개 demonstration dataset으로 OpenVLA LoRA fine-tuning을 수행한 뒤, fine-tuned model을 local MuJoCo 환경에서 실행해 보았다.
 
-이 demo는 단순히 dataset demonstration을 재생한 것이 아니라, fine-tuned OpenVLA model이 현재 camera image와 language instruction을 입력받아 action을 예측하고, local MuJoCo simulation에서 그 action을 실행한 결과이다.
+이 결과는 dataset episode를 단순 재생한 것이 아니라, OpenVLA model이 현재 camera image와 language instruction을 입력받아 action을 예측하고, 그 예측 결과를 MuJoCo simulation에서 실행한 것이다.
 
-### Execution Setup
+### Grasp Task
 
-* OpenVLA inference server: remote GPU server
-* Local client: Windows PC
-* Connection: SSH local port forwarding
-* Server URL: `http://127.0.0.1:8001`
-* Model: fine-tuned `openvla/openvla-7b` with LoRA
-* Dataset: `raccoon_pick_place`
-* Task examples:
+Instruction: `grasp the yellow cylinder`
 
-  * `grasp the yellow cylinder`
-  * `push the blue cube`
+![Grasp task demo](videos/grasp.gif)
 
-### Grasp Task Demo
+### Push Task
 
-![Grasp red cube](Mujoco/gif/grasp.gif)
+Instruction: `push the blue cube`
 
-### Push Task Demo
+![Push task demo](videos/push.gif)
 
-![Push blue cube](Mujoco/gif/push.gif)
-
-The video shows that the fine-tuned model can receive a language instruction, identify the target object in the MuJoCo scene, and generate actions for the corresponding manipulation task. In the push task, the client-side push boost was applied to make the cube movement more visible and stable during inference.
+실행 결과, fine-tuned model은 language instruction에 따라 grasp와 push task를 구분하여 수행하였다. Push task에서는 cube가 더 명확하게 밀리도록 client-side push boost를 적용하였다.
 
