@@ -418,13 +418,13 @@ Fine-tuning이 완료된 OpenVLA model을 서버에서 inference server로 실�
   * `grasp the yellow cylinder`
   * `push the blue cube`
 
-### Local Inference Video
+### Grasp Task Demo
 
-[Watch local inference demo](videos/grasp.mp4)
+![Grasp red cube](Mujoco/gif/grasp.gif)
 
 ### Push Task Demo
 
-[Watch push inference demo](videos/push.mp4)
+![Push blue cube](Mujoco/gif/push.gif)
 
 The video shows that the fine-tuned model can receive a language instruction, identify the target object in the MuJoCo scene, and generate actions for the corresponding manipulation task. In the push task, the client-side push boost was applied to make the cube movement more visible and stable during inference.
 
