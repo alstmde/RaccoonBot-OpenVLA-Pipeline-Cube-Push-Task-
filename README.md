@@ -55,7 +55,7 @@ Cylinder push도 실험하였으나, cylinder는 굴림 및 접촉 특성이 불
 
 본 과제에서는 기존 RaccoonBot OpenVLA pipeline과 비교하여 dataset 구성과 inference 동작을 다음과 같이 확장하였다.
 
-### 1. Dataset Extension
+### 5.1 Dataset Extension
 
 | Item                 | Before                       | After                                                   |
 | -------------------- | ---------------------------- | ------------------------------------------------------- |
@@ -80,7 +80,7 @@ Cylinder push도 실험하였으나, cylinder는 굴림 및 접촉 특성이 불
 
 Cylinder push도 추가로 실험하였지만, 원통형 물체는 굴림과 접촉 특성이 불안정하여 안정적인 push demonstration을 확보하기 어려웠다. 따라서 최종 dataset에서는 push task를 red/blue cube로 제한하였다.
 
-### 2. Code Improvement
+### 5.2 Code Improvement
 
 | Item               | Before                            | After                                                                      |
 | ------------------ | --------------------------------- | -------------------------------------------------------------------------- |
@@ -90,7 +90,7 @@ Cylinder push도 추가로 실험하였지만, 원통형 물체는 굴림과 접
 | Push execution     | Not supported in original task    | Push target placement stabilization and push action boost                  |
 | Debugging          | Basic execution output            | Action log and push-related execution log added                            |
 
-### 3. Visual Evidence
+### 5.3 Visual Evidence
 
 에피소드 시각화는 저장된 `frame_*.png` 이미지들을 GIF 파일로 변환하여 생성하였다.
 
@@ -99,7 +99,7 @@ Cylinder push도 추가로 실험하였지만, 원통형 물체는 굴림과 접
 
 GIF 결과를 통해 생성된 demonstration이 의도한 grasp 및 push 동작을 정상적으로 수행하는 것을 확인할 수 있다.
 
-### 4. Training Evidence
+### 5.4 Training Evidence
 
 새롭게 생성한 `raccoon_pick_place` 데이터셋을 사용하여 OpenVLA LoRA 파인튜닝을 수행하였으며, 총 10,000 step까지 학습이 정상적으로 완료되었다.
 
