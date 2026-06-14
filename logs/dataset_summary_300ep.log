@@ -1,0 +1,9 @@
+Dataset root: raccoon_grasp_push_4objects_custom
+Task counts:
+grasp:blue_cube:success=True 50
+grasp:green_cylinder:success=True 50
+grasp:red_cube:success=True 50
+grasp:yellow_cylinder:success=True 50
+push:blue_cube:success=True 50
+push:red_cube:success=True 50
+Total episodes: 300

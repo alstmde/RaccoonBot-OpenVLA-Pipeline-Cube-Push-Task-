@@ -1,0 +1,26 @@
+Dataset folder:
+total 1.2M
+drwxr-xr-x 2 root root 4.0K Jun  8 16:45 episode_000001
+drwxr-xr-x 2 root root 4.0K Jun  8 16:46 episode_000002
+drwxr-xr-x 2 root root 4.0K Jun  8 16:46 episode_000003
+drwxr-xr-x 2 root root 4.0K Jun  8 16:46 episode_000004
+drwxr-xr-x 2 root root 4.0K Jun  8 16:46 episode_000005
+drwxr-xr-x 2 root root 4.0K Jun  8 16:47 episode_000006
+drwxr-xr-x 2 root root 4.0K Jun  8 16:47 episode_000007
+drwxr-xr-x 2 root root 4.0K Jun  8 16:48 episode_000008
+drwxr-xr-x 2 root root 4.0K Jun  8 16:48 episode_000009
+
+Last episode:
+episode_000291
+episode_000292
+episode_000293
+episode_000294
+episode_000295
+episode_000296
+episode_000297
+episode_000298
+episode_000299
+episode_000300
+
+Checkpoint:
+drwxr-xr-x 2 root root 4.0K Jun  8 19:42 openvla-7b+raccoon_pick_place+b16+lr-0.0005+lora-r16+dropout-0.0--raccoon-grasp-push-300ep-10000step-b2-ga8-r16--image_aug
