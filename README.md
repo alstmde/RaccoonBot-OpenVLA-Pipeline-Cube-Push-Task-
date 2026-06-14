@@ -421,3 +421,16 @@ Instruction: `push the blue cube`
 
 실행 결과, fine-tuned model은 language instruction에 따라 grasp와 push task를 구분하여 수행하였다. Push task에서는 cube가 더 명확하게 밀리도록 client-side push boost를 적용하였다.
 
+## 9. Real RaccoonBot Hardware Demo
+
+Fine-tuned OpenVLA model을 inference server로 실행한 뒤, local PC와 실제 RaccoonBot을 연결하여 hardware test를 수행하였다.
+
+### Yellow Cylinder Grasp Demo
+
+Instruction: `grasp the yellow cylinder`
+
+![Real RaccoonBot yellow cylinder grasp](Mujoco/gif/real.gif)
+
+위 결과를 통해 fine-tuned OpenVLA model이 simulation뿐만 아니라 실제 RaccoonBot hardware에서도 yellow cylinder를 grasp하는 동작을 수행할 수 있음을 확인하였다.
+
+
